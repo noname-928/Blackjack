@@ -24,7 +24,6 @@ String toString()
 class Card {
 Suit suit
 Point point
-
 String toString()
 }
 
@@ -39,8 +38,8 @@ judge()
 }
 
 class Deck {
-List<Card> cardsOfDeck
-shuffle()
+List<Card> deck
+String toString()
 }
 
 @enduml
