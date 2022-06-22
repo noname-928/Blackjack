@@ -1,0 +1,41 @@
+@startuml
+
+Card <|-- Suit
+Card <|-- Point
+Hand <|--Card
+Deck <|-- Card
+Hand <-- Dealer
+
+
+enum Suit {
+スペード
+ハート
+ダイヤ
+クラブ
+}
+
+class Point {
+convert()
+}
+
+class Card {
+Suit suit
+Point point
+}
+
+class Hand {
+List<Card> cardsOfHand
+calculate()
+}
+
+class Dealer {
+Hand hand
+judge()
+}
+
+class Deck {
+List<Card> cardsOfDeck
+shuffle()
+}
+
+@enduml
