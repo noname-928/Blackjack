@@ -15,12 +15,16 @@ enum Suit {
 }
 
 class Point {
-convert()
+int numberOfCard
+String name
+int calculationPoint
+String toString()
 }
 
 class Card {
 Suit suit
 Point point
+String toString()
 }
 
 class Hand {
